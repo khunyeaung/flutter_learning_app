@@ -1,4 +1,4 @@
-# Lear Flutter #
+# Lean Flutter #
 
 A Flutter Learning app that can access that can learning flutter source's code
 
