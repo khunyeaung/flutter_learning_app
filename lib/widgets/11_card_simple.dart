@@ -31,7 +31,7 @@ class CardSimple extends StatelessWidget {
             ),
           ),
           Card(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             color: Colors.green,
             elevation: 0.0,
             child: SizedBox(
@@ -39,10 +39,10 @@ class CardSimple extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.amber,
                 onTap: () {},
-                child: Expanded(
+                child: const Expanded(
                   child: Row(
                     children: [
-                      const Text(
+                      Text(
                         'This is card 2 (with InkWell',
                         style: TextStyle(color: Colors.white),
                       )
@@ -52,8 +52,8 @@ class CardSimple extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Card(
               color: Colors.blue,
               shape: RoundedRectangleBorder(

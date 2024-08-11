@@ -60,7 +60,7 @@ class _KeySimpleState extends State<KeySimple> {
                       return;
                     }
                   },
-                  child: Text('Validate'))
+                  child: const Text('Validate'))
             ],
           ),
         ),
