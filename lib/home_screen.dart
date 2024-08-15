@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning_app/lists/listview_builder_demo.dart';
 import 'package:flutter_learning_app/widgets/11_card_simple.dart';
 import 'preview_screen.dart';
 import 'widgets/01_icon_simple.dart';
@@ -58,6 +59,7 @@ class HomeScreen extends StatelessWidget {
       buildSubtitle('FlutterKeys', const KeySimple(), 'widgets/10_key_simple.dart'),
       buildSubtitle(
           'Flutter Cards', const CardSimple(), 'widgets/11_card_simple.dart'),
+
     ];
     final List<Widget> layouts = [
       buildSubtitle('Container', const Placeholder(), ''),
@@ -68,6 +70,7 @@ class HomeScreen extends StatelessWidget {
       buildSubtitle('Stack', const Placeholder(), ''),
     ];
     final List<Widget> lists = [
+      buildSubtitle('List View Chat', const ListViewBuilderDemo(), 'lists/listview_builder_demo.dart'),
       buildSubtitle('ListTile', const Placeholder(), ''),
       buildSubtitle('ListView.builder()', const Placeholder(), ''),
       buildSubtitle('GridView', const Placeholder(), ''),
