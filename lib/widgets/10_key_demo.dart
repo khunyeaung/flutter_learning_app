@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class KeySimple extends StatefulWidget {
-  const KeySimple({super.key});
+class KeyDemo extends StatefulWidget {
+  const KeyDemo({super.key});
 
   @override
-  State<KeySimple> createState() => _KeySimpleState();
+  State<KeyDemo> createState() => _KeyDemoState();
 }
 
-class _KeySimpleState extends State<KeySimple> {
+class _KeyDemoState extends State<KeyDemo> {
   // globalkeys are used in stateful widgets
   // declare a global key and depending on the need of use
   // add the proper T argument
@@ -52,10 +52,10 @@ class _KeySimpleState extends State<KeySimple> {
                 }),
               ),
               TextButton(
-                  onPressed: (){
+                  onPressed: () {
                     // access the Form widgets variables and functions
                     // in this case we use the validate() method
-                    if(!formkey.currentState!.validate()){
+                    if (!formkey.currentState!.validate()) {
                       print('error in the form');
                       return;
                     }

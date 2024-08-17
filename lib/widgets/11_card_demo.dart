@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CardSimple extends StatelessWidget {
-  const CardSimple({super.key});
+class CardDemo extends StatelessWidget {
+  const CardDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +86,6 @@ class CardSimple extends StatelessWidget {
                             fit: BoxFit.scaleDown,
                             alignment: Alignment.centerLeft,
                             child: Text('Card 4 (Complex Example)'),
-
                           ))
                     ],
                   ),

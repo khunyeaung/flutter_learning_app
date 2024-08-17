@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning_app/lists/listview_builder_demo.dart';
-import 'package:flutter_learning_app/widgets/11_card_simple.dart';
+import 'lists/listview_builder_demo.dart';
 import 'preview_screen.dart';
-import 'widgets/01_icon_simple.dart';
-import 'widgets/02_text_simple.dart';
-import 'widgets/03_typography_simple.dart';
-import 'widgets/04_button_simple.dart';
-import 'widgets/05_text_field_simple.dart';
-import 'widgets/06_textformfield_simple.dart';
-import 'widgets/07_image_simple.dart';
-import 'widgets/10_key_simple.dart';
+import 'widgets/01_icon_demo.dart';
+import 'widgets/02_text_demo.dart';
+import 'widgets/03_typography_demo.dart';
+import 'widgets/04_button_demo.dart';
+import 'widgets/05_text_field_demo.dart';
+import 'widgets/06_textformfield_demo.dart';
+import 'widgets/07_image_demo.dart';
+import 'widgets/10_key_demo.dart';
+import 'widgets/11_card_demo.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -56,10 +56,10 @@ class HomeScreen extends StatelessWidget {
           'widgets/06_textformfield_simple.dart'),
       buildSubtitle(
           'Image Network', const ImageDemo(), 'widgets/07_image_simple.dart'),
-      buildSubtitle('FlutterKeys', const KeySimple(), 'widgets/10_key_simple.dart'),
       buildSubtitle(
-          'Flutter Cards', const CardSimple(), 'widgets/11_card_simple.dart'),
-
+          'FlutterKeys', const KeyDemo(), 'widgets/10_key_simple.dart'),
+      buildSubtitle(
+          'Flutter Cards', const CardDemo(), 'widgets/11_card_simple.dart'),
     ];
     final List<Widget> layouts = [
       buildSubtitle('Container', const Placeholder(), ''),
@@ -70,7 +70,8 @@ class HomeScreen extends StatelessWidget {
       buildSubtitle('Stack', const Placeholder(), ''),
     ];
     final List<Widget> lists = [
-      buildSubtitle('List View Chat', const ListViewBuilderDemo(), 'lists/listview_builder_demo.dart'),
+      buildSubtitle('List View Chat', const ListViewBuilderDemo(),
+          'lists/listview_builder_demo.dart'),
       buildSubtitle('ListTile', const Placeholder(), ''),
       buildSubtitle('ListView.builder()', const Placeholder(), ''),
       buildSubtitle('GridView', const Placeholder(), ''),
@@ -98,7 +99,6 @@ class HomeScreen extends StatelessWidget {
       buildSubtitle('BottomNavBar', const Placeholder(), ''),
       buildSubtitle('Page Selector', const Placeholder(), ''),
       buildSubtitle('DraggableScroolableSheet', const Placeholder(), ''),
-      
     ];
 
     return Scaffold(
@@ -118,7 +118,7 @@ class HomeScreen extends StatelessWidget {
               buildTitle('Lists', lists),
               buildTitle('Appbar', appbars),
               buildTitle('Navigations', navigations)
-        
+
               // ListTile(
               //   leading: Icon(Icons.settings),
               //   title: Text('Settings'),
